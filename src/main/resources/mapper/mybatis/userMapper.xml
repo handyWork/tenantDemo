@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.tenant.mapper.UserMapper">
+
+
+    <select id="loadTenantName" resultType="java.lang.String">
+        select tenant_name from tenant
+        where tenant_id = #{tenantId}
+        ;
+    </select>
+</mapper>

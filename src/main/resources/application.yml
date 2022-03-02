@@ -1,0 +1,22 @@
+server:
+  tomcat:
+    basedir: /Users/yangzhi/home/ap/seap/ccb/springboottmp/
+  port: 30088
+
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/blade?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+#      jdbc-url: jdbc:mysql://127.0.0.1:3306/ccb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+#      jdbc-url: jdbc:mysql://10.193.62.34:23306/ccb?serverTimezone=Hongkong&useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: Cl0vdsec.mysql
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #配置映射文件
+#  type-aliases-package: com.example.tenant #配置实体类
+
+
+
