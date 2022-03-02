@@ -30,7 +30,7 @@ import java.util.Map;
  */
 @EnableTransactionManagement
 @Configuration
-@MapperScan({"com.example.tenant.dao.*"})
+@MapperScan({"com.example.tenant.mapper.*"})
 public class MybatisPlusConfig {
     @Bean("master")
     @Primary
