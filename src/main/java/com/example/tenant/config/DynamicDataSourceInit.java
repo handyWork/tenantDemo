@@ -54,6 +54,7 @@ public class DynamicDataSourceInit {
         dynamicDataSource.setDataSources(dataSourceMap);
         /**
          * 必须执行此操作，才会重新初始化AbstractRoutingDataSource 中的 resolvedDataSources，也只有这样，动态切换才会起效
+         * 相当于定义一个map   tenantId,对应的数据源
          */
         dynamicDataSource.afterPropertiesSet();
     }
