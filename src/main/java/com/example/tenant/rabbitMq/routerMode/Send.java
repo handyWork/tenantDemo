@@ -5,6 +5,12 @@ import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 
+/**
+ * 路由模式
+ * 发布消息时  在basicPublish 时指定 路由key，
+ * 消费者，在绑定交换机时，需要订阅 routing key    路由的key可以是多个
+ */
+
 public class Send {
     private final static String EXCHANGE_NAME = "test_direct_exchange";
 

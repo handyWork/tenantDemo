@@ -4,6 +4,10 @@ import com.example.tenant.util.ConnectionUtil;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 
+/**
+ * 基础模式
+ * https://blog.csdn.net/kavito/article/details/91403659
+ */
 public class Send {
  
     private final static String QUEUE_NAME = "simple_queue";
